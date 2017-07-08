@@ -29,6 +29,8 @@
   <!-- Here we have div called "random-number" where our random number will go -->
   <h1 class="text-center" id="random-number"></h1>
 
+  <div id=random></div>
+
   <script type="text/javascript">
 
     $(document).ready(function() {
@@ -38,8 +40,10 @@
       $("#random-button").click(function() {
         var number = 1 + Math.floor(Math.random() * 1000);
         console.log(number);
+        $("#random").html(number);
 
       })
+
 
       // ...
 
